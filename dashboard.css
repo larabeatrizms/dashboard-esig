@@ -1,5 +1,8 @@
 body {
   font-size: 0.875rem;
+  font-family: "Ubuntu", "Roboto", sans-serif !important;
+
+  /* font-weight: 300; */
 }
 
 h5 p {
@@ -177,9 +180,11 @@ h5 p {
  */
 
 .card {
-  background-color: #fbfbfb !important;
+  /* background-color: #fbfbfb !important; */
   border: none !important;
-  margin-bottom: 20px;
+  border-radius: 20px !important;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 #first-row {
@@ -188,8 +193,80 @@ h5 p {
 }
 
 .card-body .fas {
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-title {
+  font-style: bold;
+  font-weight: 700;
+}
+
+#first-card .card-title {
+  color: #ededed;
+}
+
+#first-card {
+  /* background-color: #4c02e1; */
+  color: #ededed;
+
+  background: linear-gradient(90deg, #8e2de2 -7.5%, #4a00e0 100%);
+  -webkit-box-shadow: 0px 10px 85px -32px rgba(74, 0, 224, 1);
+  -moz-box-shadow: 0px 10px 85px -32px rgba(74, 0, 224, 1);
+  box-shadow: 0px 10px 85px -32px rgba(74, 0, 224, 1);
+}
+
+#second-card {
+  color: #54565c;
+}
+
+.card-tag {
+  background-color: #60cc63;
+  border-radius: 10px;
+  color: #fff;
+  max-width: 80%;
+  /* height: 30px;
+  width: 50px; */
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 3px 5px; */
+  padding: 3px 0.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-tag-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-tag .card-tag-content .fas {
+  margin-bottom: -3px;
+  padding-right: 2px;
+  align-self: flex-end;
+  font-size: 0.9rem;
+}
+
+.card-tag p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+#third-card {
+  color: #54565c;
+}
+
+.card .card-title {
+  color: #4c02e1;
+}
+
+#card-chart {
+  color: #54565c;
 }

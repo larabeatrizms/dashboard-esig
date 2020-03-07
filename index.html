@@ -23,8 +23,19 @@
       crossorigin="anonymous"
     />
 
+    <!-- Font's Roboto and Ubuntu -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" /> -->
 
+    <!-- Fontawesome -->
     <script
       src="https://kit.fontawesome.com/e012f89c97.js"
       crossorigin="anonymous"
@@ -35,8 +46,10 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
 
+    <!-- Gráficos -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
+    <!-- Javascript code -->
     <script type="text/javascript" src="dashboard.js"></script>
 
     <title>Dashboard</title>
@@ -51,7 +64,7 @@
         <ul class="navbar-nav px-3" id="nav-item-float-right">
           <li class="nav-item text-nowrap">
             <div class="user-name">
-              RENEE MCKELVEY
+              LARA BEATRIZ
             </div>
             <a class="nav-link user-settings" href="#">
               Account settings
@@ -121,7 +134,7 @@
           </div>
         </nav>
 
-        <main role="main" class="col-md-11 ml-sm-11 col-lg-11 px-4">
+        <main role="main" class="col-md-11 ml-sm-11 col-lg-11 px-5">
           <!-- <div
             class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
           >
@@ -146,39 +159,48 @@
           </div> -->
           <div class="row">
             <div class="col-sm-4">
-              <div class="card shadow">
+              <div class="card" id="first-card">
                 <div class="card-body " id="first-row">
                   <div>
-                    <h5 class="card-title">TOTAL SALES</h5>
                     <p class="card-text">
-                      21 324
+                      Total sales
                     </p>
+                    <h4 class="card-title">21 324</h4>
+                    <!-- <p class="card-text">
+                      21 324
+                    </p> -->
                   </div>
                   <i class="fas fa-store"></i>
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
-              <div class="card shadow">
+              <div class="card" id="second-card">
                 <div class="card-body" id="first-row">
                   <div>
-                    <h5 class="card-title">TOTAL INCOME</h5>
                     <p class="card-text">
-                      21 324
+                      Total income
                     </p>
+                    <h4 class="card-title">35 424</h4>
                   </div>
-                  <i class="fas fa-tag"></i>
+                  <div class="card-tag">
+                    <div class="card-tag-content">
+                      <i class="fas fa-sort-up"></i>
+                      <p>130%</p>
+                    </div>
+                  </div>
+                  <!-- <i class="fas fa-tag"></i> -->
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
-              <div class="card shadow">
+              <div class="card" id="third-card">
                 <div class="card-body " id="first-row">
                   <div>
-                    <h5 class="card-title">TOTAL VIEWS</h5>
                     <p class="card-text">
-                      65 223
+                      Total views
                     </p>
+                    <h4 class="card-title">65 223</h4>
                   </div>
                   <i class="fas fa-desktop"></i>
                 </div>
@@ -188,9 +210,11 @@
 
           <div class="row">
             <div class="col-sm-8">
-              <div class="card shadow">
+              <div class="card shadow" id="card-chart">
                 <div class="card-body">
-                  <h5 class="card-title">SALES PERFORMANCE</h5>
+                  <p class="card-text">
+                    Sales performance
+                  </p>
                   <canvas
                     class="my-4 w-100"
                     id="myChart"
@@ -201,9 +225,11 @@
               </div>
             </div>
             <div class="col-sm-4">
-              <div class="card shadow">
+              <div class="card shadow" id="card-chart">
                 <div class="card-body">
-                  <h5 class="card-title">TOP CATEGORIES</h5>
+                  <p class="card-text">
+                    Top categories
+                  </p>
                   <canvas
                     class="my-4 w-100"
                     id="myChart2"
