@@ -40,18 +40,32 @@
       <a class="navbar-brand col-sm-2 col-md-1 mr-0" id="brand" href="#">
         <i class="fa fa-bars" id="brand-icon"></i>
       </a>
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
+      <div class="navbar-right">
+        <ul class="navbar-nav px-3" id="nav-item-float-right">
+          <li class="nav-item text-nowrap">
+            <div class="user-name">
+              RENEE MCKELVEY
+            </div>
+            <a class="nav-link user-settings" href="#">
+              Account settings
+            </a>
+          </li>
+        </ul>
+        <img
+          class="user-img"
+          src="perfil.jpg"
+          alt="Imagem de usuário"
+          height="42"
+          width="42"
+        />
+      </div>
     </nav>
 
     <div class="container-fluid">
       <div class="row">
         <nav class="col-md-1 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
-            <ul class="nav flex-column">
+            <ul class="nav flex-column" id="ul-icons">
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="fa fa-search"></i>
@@ -60,9 +74,11 @@
               </li>
 
               <li class="nav-item ">
-                <a class="nav-link  active" href="#">
-                  <i class="fa fa-home"></i>
-                </a>
+                <div class="item-active">
+                  <a class="nav-link  active" href="#">
+                    <i class="fa fa-home"></i>
+                  </a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
