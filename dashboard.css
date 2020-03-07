@@ -12,12 +12,24 @@ body {
  * Nav-bar
  */
 
+.navbar-brand {
+  font-size: 1rem;
+  background: rgba(31, 0, 94, 100);
+}
+.navbar {
+}
+
+.bg-lighter {
+  background-color: #ededed;
+}
+
 #brand {
   display: flex;
   justify-content: center;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  background-color: rgba(0, 0, 0, 0) !important;
+  min-height: 58px;
+  /* background-color: rgba(25, 255, 255, 100) !important; */
   box-shadow: none !important;
 }
 
@@ -30,12 +42,14 @@ body {
 }
 
 .user-name {
+  color: #1f005e;
   padding-top: 0.2rem;
-  font-size: medium;
+  font-size: smaller;
   line-height: 1;
 }
 
 .user-settings {
+  color: #4c02e1 !important;
   font-size: small;
   line-height: 1;
 }
@@ -72,7 +86,7 @@ body {
   left: 0;
   z-index: 100; /* Behind the navbar */
   padding: 48px 0 0; /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #4a00e0 0%, #8e2de2 100%);
 }
 
 .sidebar-sticky {
@@ -88,9 +102,8 @@ body {
 }
 
 #ul-icons {
+  padding-left: 2.4vw;
   width: 100%;
-  display: block;
-  /* align-items: center; */
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
@@ -101,13 +114,9 @@ body {
 }
 
 .sidebar .nav-link {
-  font-weight: 500;
-  color: #333;
-}
-
-.sidebar .nav-link .feather {
-  margin-right: 4px;
-  color: #999;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ededed;
 }
 
 .sidebar .nav-link.active {
@@ -116,6 +125,7 @@ body {
 
 .item-active {
   background: #ededed;
+  border-radius: 40px 0px 0px 40px;
 }
 
 .sidebar .nav-link:hover .feather,
@@ -132,6 +142,10 @@ body {
  * Content
  */
 
+.container-fluid {
+  background-color: #ededed;
+}
+
 [role="main"] {
   padding-top: 133px; /* Space for fixed navbar */
 }
@@ -140,33 +154,4 @@ body {
   [role="main"] {
     padding-top: 48px; /* Space for fixed navbar */
   }
-}
-
-/*
- * Navbar
- */
-
-.navbar-brand {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0.25);
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
-}
-
-.navbar .form-control {
-  padding: 0.75rem 1rem;
-  border-width: 0;
-  border-radius: 0;
-}
-
-.form-control-dark {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.form-control-dark:focus {
-  border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
 }
