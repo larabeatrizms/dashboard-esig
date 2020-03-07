@@ -44,9 +44,15 @@ h5 p {
   align-self: center;
 }
 
-.fa-tree {
-  font-size: 20px;
+.fa-mountain {
+  font-size: 22px;
   color: #1f005e;
+}
+
+#navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #nav-item-float-right {
@@ -276,4 +282,12 @@ h5 p {
 }
 
 .card-svg-chart {
+}
+
+/*
+*  Section - Recent costumers
+*/
+
+h2 {
+  margin-top: 1rem !important;
 }
