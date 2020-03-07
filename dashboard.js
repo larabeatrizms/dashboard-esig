@@ -64,9 +64,17 @@ function montarFigura() {
       datasets: [
         {
           label: "My First dataset",
-          backgroundColor: "rgb(255, 99, 132)",
+          backgroundColor: "rgba(255, 99, 132,0)",
+          // backgroundColor: "rgba(255, 99, 132,5)",
           borderColor: "rgb(255, 99, 132)",
           data: [0, 10, 5, 2, 20, 30, 45]
+        },
+        {
+          label: "Objetos",
+          backgroundColor: "rgba(255, 99, 132,0)",
+          // backgroundColor: "#800080",
+          borderColor: "#4c02e1",
+          data: [10, 20, 50, 20, 10, 35, 40]
         }
       ]
     },
@@ -78,12 +86,14 @@ function montarFigura() {
   data = {
     datasets: [
       {
-        data: [10, 20, 30]
+        backgroundColor: ["#87cefa", "#85a8fc", "#ffff00", "#ffbdfd"],
+        borderColor: "#fafafa",
+        data: [10, 20, 30, 5]
       }
     ],
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: ["Red", "Yellow", "Blue"]
+    labels: ["Red", "Yellow", "Blue", "Aleatorio"]
   };
 
   var ctx2 = document.getElementById("myChart2").getContext("2d");

@@ -261,6 +261,10 @@ h5 p {
 
 #third-card {
   color: #54565c;
+  border: 2px solid black;
+  background: url(card-mini-chart.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card .card-title {
@@ -269,4 +273,7 @@ h5 p {
 
 #card-chart {
   color: #54565c;
+}
+
+.card-svg-chart {
 }
