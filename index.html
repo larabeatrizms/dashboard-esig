@@ -24,6 +24,12 @@
     />
 
     <!-- <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" /> -->
+
+    <script
+      src="https://kit.fontawesome.com/e012f89c97.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
@@ -40,6 +46,7 @@
       <a class="navbar-brand col-sm-2 col-md-1 mr-0" id="brand" href="#">
         <i class="fa fa-bars" id="brand-icon"></i>
       </a>
+      <!-- <i class="fa fa-tree"></i> -->
       <div class="navbar-right col-sm-2 col-md-2">
         <ul class="navbar-nav px-3" id="nav-item-float-right">
           <li class="nav-item text-nowrap">
@@ -114,8 +121,8 @@
           </div>
         </nav>
 
-        <main role="main" class="col-md-10 ml-sm-10 col-lg-10 px-4">
-          <div
+        <main role="main" class="col-md-11 ml-sm-11 col-lg-11 px-4">
+          <!-- <div
             class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
           >
             <h1 class="h2">Dashboard</h1>
@@ -136,14 +143,77 @@
                 This week
               </button>
             </div>
+          </div> -->
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="card-body " id="first-row">
+                  <div>
+                    <h5 class="card-title">TOTAL SALES</h5>
+                    <p class="card-text">
+                      21 324
+                    </p>
+                  </div>
+                  <i class="fas fa-store"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="card-body" id="first-row">
+                  <div>
+                    <h5 class="card-title">TOTAL INCOME</h5>
+                    <p class="card-text">
+                      21 324
+                    </p>
+                  </div>
+                  <i class="fas fa-tag"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="card-body " id="first-row">
+                  <div>
+                    <h5 class="card-title">TOTAL VIEWS</h5>
+                    <p class="card-text">
+                      65 223
+                    </p>
+                  </div>
+                  <i class="fas fa-desktop"></i>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <canvas
-            class="my-4 w-100"
-            id="myChart"
-            width="900"
-            height="380"
-          ></canvas>
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="card shadow">
+                <div class="card-body">
+                  <h5 class="card-title">SALES PERFORMANCE</h5>
+                  <canvas
+                    class="my-4 w-100"
+                    id="myChart"
+                    width="900"
+                    height="380"
+                  ></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="card-body">
+                  <h5 class="card-title">TOP CATEGORIES</h5>
+                  <canvas
+                    class="my-4 w-100"
+                    id="myChart2"
+                    width="300"
+                    height="280"
+                  ></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <h2>Section title</h2>
           <div class="table-responsive">

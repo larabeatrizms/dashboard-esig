@@ -74,4 +74,23 @@ function montarFigura() {
     // Configuration options go here
     options: {}
   });
+
+  data = {
+    datasets: [
+      {
+        data: [10, 20, 30]
+      }
+    ],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: ["Red", "Yellow", "Blue"]
+  };
+
+  var ctx2 = document.getElementById("myChart2").getContext("2d");
+  // For a pie chart
+  var myPieChart = new Chart(ctx2, {
+    type: "doughnut",
+    data: data,
+    options: {}
+  });
 }

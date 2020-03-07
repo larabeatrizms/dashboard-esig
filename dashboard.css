@@ -2,6 +2,10 @@ body {
   font-size: 0.875rem;
 }
 
+h5 p {
+  color: #323648;
+}
+
 .feather {
   width: 16px;
   height: 16px;
@@ -35,6 +39,11 @@ body {
 
 #brand-icon {
   align-self: center;
+}
+
+.fa-tree {
+  font-size: 20px;
+  color: #1f005e;
 }
 
 #nav-item-float-right {
@@ -161,4 +170,26 @@ body {
   [role="main"] {
     padding-top: 48px; /* Space for fixed navbar */
   }
+}
+
+/*
+ * Content dashboard
+ */
+
+.card {
+  background-color: #fbfbfb !important;
+  border: none !important;
+  margin-bottom: 20px;
+}
+
+#first-row {
+  display: grid !important;
+  grid-template-columns: 3fr 1fr !important;
+}
+
+.card-body .fas {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
