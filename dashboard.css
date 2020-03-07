@@ -41,6 +41,19 @@ body {
   text-align: right;
 }
 
+.navbar-right {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 575px) {
+  .navbar-right {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .user-name {
   color: #1f005e;
   padding-top: 0.2rem;
@@ -52,12 +65,6 @@ body {
   color: #4c02e1 !important;
   font-size: small;
   line-height: 1;
-}
-
-.navbar-right {
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
 }
 
 .user-img {
