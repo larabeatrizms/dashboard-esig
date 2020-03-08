@@ -310,7 +310,8 @@ h5 p {
 }
 
 .btn-outline-primary:hover {
-  background-color: #e3c8fb !important;
+  /* background-color: #e3c8fb !important; */
+  background-color: #ffffff !important;
 }
 
 /*
@@ -334,7 +335,7 @@ h2 {
 
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
-  background-color: #d5c5e2;
+  background-color: #dcd4e2;
 }
 
 td {
