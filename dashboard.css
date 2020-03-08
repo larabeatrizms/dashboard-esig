@@ -23,8 +23,6 @@ h5 p {
   font-size: 1rem;
   background: rgba(31, 0, 94, 100);
 }
-.navbar {
-}
 
 .bg-lighter {
   background-color: #ededed;
@@ -290,9 +288,6 @@ h5 p {
 * Buttons
 */
 
-.btn:active {
-}
-
 .btn-primary {
   background-color: #8e2de2 !important;
   border-color: #8e2de2 !important;
@@ -331,6 +326,7 @@ h2 {
 .table-responsive {
   color: #54565c;
   background-color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .table-hover tbody tr:hover td,
