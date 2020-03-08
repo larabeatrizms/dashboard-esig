@@ -329,7 +329,12 @@ h2 {
 
 .table-responsive {
   color: #54565c;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #d5c5e2;
 }
 
 td {
