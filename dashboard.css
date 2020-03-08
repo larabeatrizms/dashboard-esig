@@ -172,7 +172,7 @@ h5 p {
 }
 
 [role="main"] {
-  padding-top: 133px; /* Space for fixed navbar */
+  padding-top: 153px; /* Space for fixed navbar */
 }
 
 @media (min-width: 768px) {
@@ -281,13 +281,66 @@ h5 p {
   color: #54565c;
 }
 
-.card-svg-chart {
+.card-chart-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+* Buttons
+*/
+
+.btn:active {
+}
+
+.btn-primary {
+  background-color: #8e2de2 !important;
+  border-color: #8e2de2 !important;
+  padding: 0.25rem 0.4rem !important;
+  /* width: 2rem; */
+  height: 2rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline-primary {
+  border-color: #8e2de2 !important;
+  color: #8e2de2 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #e3c8fb !important;
 }
 
 /*
 *  Section - Recent costumers
 */
 
-h2 {
+.section-list {
+  display: flex;
+  justify-content: space-between;
   margin-top: 1rem !important;
+}
+
+h2 {
+  color: #54565c;
+}
+
+.table-responsive {
+  color: #54565c;
+  background-color: #f5f5f5;
+}
+
+td {
+  color: #54565c;
+  vertical-align: middle !important;
+}
+td p {
+  font-size: 0.8rem;
+}
+
+#btn-list-item {
+  vertical-align: middle !important;
+  width: max-content;
 }
