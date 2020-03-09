@@ -86,7 +86,7 @@ function montarFigura() {
   data = {
     datasets: [
       {
-        backgroundColor: ["#8e2de2", "#60CC63", "#4C02E1", "#ffbdfd"],
+        backgroundColor: ["#8e2de2", "#FF6961", "#4C02E1", "#ffbdfd"],
         borderColor: "#fafafa",
         data: [10, 20, 30, 5]
       }
