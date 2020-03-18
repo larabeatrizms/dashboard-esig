@@ -9,12 +9,6 @@ h5 p {
   color: #323648;
 }
 
-.feather {
-  width: 16px;
-  height: 16px;
-  vertical-align: text-bottom;
-}
-
 /*
  * Nav-bar
  */
@@ -149,11 +143,6 @@ h5 p {
 .item-active {
   background: #ededed;
   border-radius: 40px 0px 0px 40px;
-}
-
-.sidebar .nav-link:hover .feather,
-.sidebar .nav-link.active .feather {
-  color: inherit;
 }
 
 .sidebar-heading {
